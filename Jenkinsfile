@@ -15,3 +15,5 @@ pipeline {
                                               credentialsId: 'pegasus-token']]])
             }
         }
+    }
+}
