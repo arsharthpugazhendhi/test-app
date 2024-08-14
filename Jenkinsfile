@@ -10,8 +10,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM',
-                         branches: [[name: "*/MAVIC-TSE-SDK-12.0.1/UAT-STABLE"]],
-                         userRemoteConfigs: [[url: 'https://github.com/Tata-Consumer-Products-Limited/Tcpl-Mavictse-Devops.git',
+                         branches: [[name: "*/main"]],
+                         userRemoteConfigs: [[url: 'https://github.com/arsharthpugazhendhi/test-app.git',
                                               credentialsId: 'pegasus-token']]])
             }
         }
